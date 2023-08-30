@@ -15,3 +15,5 @@ To implement influence evaluation, you can directly run the **main_influence_eva
 To implement influence maximization, you can directly run the **main_influence_maximization** file. We also provide code for other comparison methods.
 ## Active learning stategy
 Active learning algorithm proposed by us is placed in the **Active_learning** file.
+# Issues
+If you find a problem with the implementation code, please ask under issue or contact us.
