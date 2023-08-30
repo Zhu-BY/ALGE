@@ -10,4 +10,8 @@ The synthetic topology and labels used for training are in the **synthetic** fol
 # Code
 Before performing the calculations, please install the required packages based on the **requiements** file.
 ## Influence evaluation
+To implement influence evaluation, you can directly run the **main_influence_evaluation** file. We also provide code for other comparison methods.
 ## Influence maximization
+To implement influence maximization, you can directly run the **main_influence_maximization** file. We also provide code for other comparison methods.
+## Active learning stategy
+Active learning algorithm proposed by us is placed in the **Active_learning** file.
