@@ -150,13 +150,16 @@ class LSTMModel(nn.Module):
 
 
 def embedding_(G):
-    p = nx.degree_centrality(G)  # degree centrality
+    p = nx.degree_centrality(G)# degree centrality
     q = H_index(G)
     r = nx.core_number(G)
-    p = [x / max(p) for x in p]
-    q = [x / max(q) for x in q]
-    r = [x / max(r) for x in r]
-    fmat = [torch.Tensor([p[i], q[i], r[i]]).reshape(1, 3) for i in range(len(G))]
+    p = list(p.values())
+    q = list(q.values())
+    r = list(r.values())
+    p = [x/max(p) for x in p]
+    q = [x/max(q) for x in q]
+    r = [x/max(r) for x in r]
+    fmat = [torch.Tensor([p[i],q[i],r[i]]).reshape(1,3) for i in range(len(G))]
     embedding = torch.concat(fmat)
     return embedding
 
