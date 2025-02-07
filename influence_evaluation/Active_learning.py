@@ -51,7 +51,8 @@ def find_threshold_2_div(S,len_G):
     m = len(S_f)
     while(True):
         InforG = nx.Graph()
-        k = max(int(0.5*(m))-1,0)
+        # k = max(int(0.5*(m))-1,0)
+        k = max(int(0.5*(m)),0)
         for i in range(len_G):
             for j in range(i+1,len_G):
                 if S[i][j]>=S_f[k]:
